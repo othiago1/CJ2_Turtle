@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Jogo</name>
+    <events>
+        <variable constant="0" name="Kills" sid="1069661367337518" static="0" type="number">0</variable>
+        <variable constant="0" name="Vida" sid="6239227792287065" static="0" type="number">3</variable>
+        <event-block sid="4568329201233909">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="1649751472864996" type="System" />
+            </conditions>
+            <actions>
+                <action id="-22" name="Set angle toward position" sid="1949709447658578" type="Player">
+                    <param id="0" name="X">mouse.X</param>
+                    <param id="1" name="Y">mouse.Y</param>
+                </action>
+                <action id="-22" name="Set angle toward position" sid="9622291888969006" type="Sprite">
+                    <param id="0" name="X">Player.X</param>
+                    <param id="1" name="Y">Player.Y</param>
+                </action>
+                <action id="0" name="Set text" sid="5537661721490599" type="Text">
+                    <param id="0" name="Text">&quot;Vidas : &quot; &amp; Vida &amp; &quot;   Kills : &quot; &amp; Kills</param>
+                </action>
+                <action id="1" name="Set cursor from sprite" sid="1956637374027854" type="Mouse">
+                    <param id="0" name="Sprite">Sprite5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2402947480305051">
+            <conditions>
+                <condition id="0" name="On click" sid="5731107130958579" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="ScrollTo" id="0" name="Shake" sid="6110771131849663" type="Player">
+                    <param id="0" name="Magnitude">50</param>
+                    <param id="1" name="Duration">0.4</param>
+                    <param id="2" name="Mode">0</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="9408050382625303" type="Player">
+                    <param id="0" name="Object">Sprite2</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3747014518378557">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="7128746129178623" type="Sprite2">
+                    <param id="0" name="Object">Sprite</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="5156073319163691" type="Sprite">
+                    <param id="0" name="Object">Sprite3</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="3143897568313314" type="Sprite2" />
+                <action id="-9" name="Destroy" sid="5160477347049456" type="Sprite" />
+                <action id="-10" name="Add to" sid="9036607765755003" type="System">
+                    <param id="0" name="Variable">Kills</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8850394945619595">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="685839865883193" type="Player">
+                    <param id="0" name="Object">Sprite</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="1185129315332792" type="System">
+                    <param id="0" name="Variable">Vida</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="8297266680418156" type="Player">
+                    <param id="0" name="Object">Sprite4</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6611967935266677">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="9292485766005594" type="System">
+                    <param id="0" name="Interval (seconds)">0.5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="1299541527645186" type="System">
+                    <param id="0" name="Object to create">Sprite</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">random(2000) </param>
+                    <param id="3" name="Y">random(2000)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4004859518228297">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="7080975870349594" type="System">
+                    <param id="0" name="Variable">Vida</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="5786000791543579" type="Player" />
+            </actions>
+        </event-block>
+        <event-block sid="6042302309126118">
+            <conditions>
+                <condition id="2" name="Key is down" sid="6897062806671738" type="Keyboard">
+                    <param id="0" name="Key">82 (R)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="8141431524250645" type="System" />
+                <action id="-21" name="Reset global variables" sid="8833703872206199" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="5612367025035276">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="5696305193696891" type="System">
+                    <param id="0" name="Variable">Kills</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">10</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="7975894516644175" type="System">
+                    <param id="0" name="Layout">Layout 2</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

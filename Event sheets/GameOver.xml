@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>GameOver</name>
+    <events>
+        <variable constant="0" name="Timecount" sid="286871330430108" static="0" type="number">0</variable>
+        <event-block sid="9551525089506051">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="1193787519610739" type="System">
+                    <param id="0" name="Interval (seconds)">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="727934452508364" type="System">
+                    <param id="0" name="Variable">Timecount</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1797861708338017">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="1094355550360498" type="System">
+                    <param id="0" name="Variable">Timecount</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="ScrollTo" id="0" name="Shake" sid="3037916877800409" type="Sprite7">
+                    <param id="0" name="Magnitude">300</param>
+                    <param id="1" name="Duration">60</param>
+                    <param id="2" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4626502162197043">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="7096870221023467" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="2646943304779323" type="System">
+                    <param id="0" name="Object to create">Player</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">random(1000)</param>
+                    <param id="3" name="Y">random(1000)</param>
+                </action>
+                <action id="-22" name="Set angle toward position" sid="2705086274727579" type="Player">
+                    <param id="0" name="X">Sprite7.X</param>
+                    <param id="1" name="Y">Sprite7.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8509712744508217">
+            <conditions />
+            <actions />
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>The Awesomest Game of All Time</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>18uerzjtwd0mc</unique-id>
+    <saved-with-version>20600</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="shadowcaster" version="1">Shadow Caster</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>854</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D web</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Ground" sid="7202192442771369">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\victor.fernandes\Downloads\ILUMINATI.png" />
+        </object-type>
+        <object-type name="Mouse" sid="5324096764808097">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Keyboard" sid="9345384089721016">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Player" sid="6273841039518357">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="8Direction" sid="3059002251101426">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="4193431567378666">
+                    <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="6667968701665917">
+                    <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="ShadowCaster" sid="6298226582906166">
+                    <behavior id="shadowcaster" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="577010852043379" speed="5">
+                    <frame duration="1" hotspotX="0.517134" hotspotY="0.476923" original-source="C:\Users\thiago.silva.NAVE0\Documents\ARTE\car.png">
+                        <image-point name="Imagepoint 1" x="1" y="0.492308" />
+                        <collision-poly>
+                            <point x="0.156454" y="0.19148" />
+                            <point x="0.512297" y="0.00386554" />
+                            <point x="0.76647" y="0.27995" />
+                            <point x="0.997613" y="0.467947" />
+                            <point x="0.791887" y="0.689121" />
+                            <point x="0.512297" y="0.996135" />
+                            <point x="0.0929108" y="0.810767" />
+                            <point x="0.00238705" y="0.467947" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="4259858867960655">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="908831389002116">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="2186813376034679">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4723656775830302" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.513109" original-source="C:\Users\thiago.silva.NAVE0\Documents\ARTE\monster.png">
+                        <collision-poly>
+                            <point x="0.607843" y="0.274648" />
+                            <point x="0.754902" y="0.507042" />
+                            <point x="0.892157" y="0.950704" />
+                            <point x="0.5" y="0.739437" />
+                            <point x="0.107843" y="0.950704" />
+                            <point x="0.254902" y="0.507042" />
+                            <point x="0.362745" y="0.253521" />
+                            <point x="0.5" y="0.0211268" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="1647339035080237">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="50007049406881">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="2389491909147126">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6128529463246783" speed="5">
+                    <frame duration="1" hotspotX="0.521569" hotspotY="0.558824" original-source="C:\Users\thiago.silva.NAVE0\Documents\ARTE\bullet.png">
+                        <collision-poly>
+                            <point x="0.162667" y="0" />
+                            <point x="0.480157" y="0" />
+                            <point x="0.797647" y="0" />
+                            <point x="0.916706" y="0.558824" />
+                            <point x="0.797647" y="1" />
+                            <point x="0.480157" y="1" />
+                            <point x="0.162667" y="1" />
+                            <point x="0.0832941" y="0.558824" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="2343471653226078">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="6847337972708768">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1701027581143597" speed="5">
+                    <frame duration="1" hotspotX="0.500894" hotspotY="0.497623" original-source="C:\Users\thiago.silva.NAVE0\Documents\ARTE\explosion.png">
+                        <collision-poly>
+                            <point x="0.26297" y="0.231379" />
+                            <point x="0.499106" y="0.199683" />
+                            <point x="0.769231" y="0.202853" />
+                            <point x="0.951699" y="0.496038" />
+                            <point x="0.797853" y="0.816165" />
+                            <point x="0.499106" y="0.92393" />
+                            <point x="0.221825" y="0.798732" />
+                            <point x="0.0948122" y="0.496038" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TextBox" sid="3914852001073775">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="Text" sid="6554838515329983">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite4" sid="7522631379328431">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="5540776346496793">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4798209319218852" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50031" original-source="C:\Users\thiago.silva\Downloads\BOKENHEART.png">
+                        <collision-poly>
+                            <point x="0.141845" y="0.139464" />
+                            <point x="0.5" y="0" />
+                            <point x="0.858155" y="0.139464" />
+                            <point x="1" y="0.5" />
+                            <point x="0.857294" y="0.85968" />
+                            <point x="0.5" y="1" />
+                            <point x="0.142706" y="0.85968" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite5" sid="6957189037429978">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4450044614545313" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\thiago.silva.NAVE0\Downloads\aim.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite6" sid="299800243826343">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="581343953104498" speed="5">
+                    <frame duration="1" hotspotX="0.501754" hotspotY="0.504132" original-source="C:\Users\thiago.silva.NAVE0\Documents\ARTE\all-seeing-eye.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite7" sid="8731944494919095">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="8Direction" sid="607189903230562">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="8062588181889194">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9823956112817613" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50116" original-source="C:\Users\thiago.silva.NAVE0\Desktop\C2\ARTE\illuminati-symbols-eye.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite8" sid="24486941201898">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6510199571924423" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Menu.xml</layout>
+        <layout>Layout 1.xml</layout>
+        <layout>Layout 2.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Jogo.xml</event-sheet>
+        <event-sheet>Menu.xml</event-sheet>
+        <event-sheet>GameOver.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Mouse" uid="1" />
+        <global-instance type="Keyboard" uid="2" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
