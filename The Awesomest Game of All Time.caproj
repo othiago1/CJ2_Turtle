@@ -248,14 +248,14 @@
     </object-folder>
     <families />
     <layout-folder>
-        <layout>Layout 1.xml</layout>
         <layout>Menu.xml</layout>
+        <layout>Layout 1.xml</layout>
         <layout>Layout 2.xml</layout>
     </layout-folder>
     <event-folder>
-        <event-sheet>Event sheet 1.xml</event-sheet>
-        <event-sheet>Event sheet 2.xml</event-sheet>
-        <event-sheet>Event sheet 3.xml</event-sheet>
+        <event-sheet>Jogo.xml</event-sheet>
+        <event-sheet>Menu.xml</event-sheet>
+        <event-sheet>GameOver.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="1" />

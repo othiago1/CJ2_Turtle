@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
-    <name>Event sheet 3</name>
+    <name>GameOver</name>
     <events>
         <variable constant="0" name="Timecount" sid="286871330430108" static="0" type="number">0</variable>
         <event-block sid="9551525089506051">
